@@ -1,0 +1,26 @@
+.header{
+    position: relative;
+    height: 50px;
+    padding: 0 10px;
+    background: #e8203d;
+    color: #fff;
+    line-height: 50px;
+}
+
+.header a{
+    color: #fff;
+}
+
+.header .title{
+    text-align: center;
+    font-size: 16px;
+}
+
+.header .icon{
+    display: inline-block;
+    vertical-align: bottom;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-size: 20px;
+}

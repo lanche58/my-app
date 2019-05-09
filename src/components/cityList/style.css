@@ -1,0 +1,29 @@
+.cityWrap{
+    border-top: 1px solid #ccc;
+    padding: 10px 20px 20px;
+    background: #fff;
+}
+
+.cityWrap .title{
+    color: #333;
+    font-size: 16px;
+}
+
+.cityList{
+    margin-left: -10px;
+    margin-top: 15px;
+}
+
+.cityList li{
+    float: left;
+    width: 33.33%;
+    margin-bottom: 10px;
+}
+
+.cityList p{
+    margin-left: 10px;
+    height: 34px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 32px;
+}

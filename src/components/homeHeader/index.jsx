@@ -9,7 +9,7 @@ class HomeHeader extends React.Component {
             <div className="home-header clearfix">
                 <Link to="/choiceCity">
                     <div className="h-city">
-                        <span className="name">{this.props.city}</span><i className="icon iconfont icon-jiantou"></i>
+                        <span className="name">{this.props.cityName}</span><i className="icon iconfont icon-jiantou"></i>
                     </div>
                 </Link>
                 <Link to="/signIn">
