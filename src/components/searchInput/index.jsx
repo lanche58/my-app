@@ -1,4 +1,5 @@
 import React from 'react';
+import { SearchControl } from "../../page/search/index";
 
 import './style.css';
 
@@ -8,6 +9,7 @@ class SearchInput extends React.Component {
         this.state = {
             isShowClear: false
         }
+        console.log(this.props.con)
     }
     render() {
         return (
@@ -45,6 +47,9 @@ class SearchInput extends React.Component {
         if (e.keyCode === 13) {
             const value = e.target.value;
             this.props.recordsShow(value);
+            // this.con.searchRecord.changeData(value);
+            console.log(this.props.con.changeData)
+            this.props.con.changeData(value)
             e.target.value = "";
         }
     }
