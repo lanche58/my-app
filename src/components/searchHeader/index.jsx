@@ -9,7 +9,7 @@ class SearchHeader extends React.Component {
         return (
             <div className="searchHeader clearfix">
                 <Link to="/"><span className="btn-cancel">取消</span></Link>
-                <SearchInput placeholder="请输入关键字"/>
+                <SearchInput recordsShow={this.props.changeFn} placeholder="请输入关键字"/>
             </div>
         )
     }

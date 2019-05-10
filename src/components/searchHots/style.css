@@ -1,0 +1,22 @@
+.searchHots{
+    padding: 10px 15px;
+    background: #f2f2f2;
+}
+
+.searchHots .hot-list{
+    background: #fff;
+    padding: 0 5px;
+}
+
+.searchHots .hot-list li{
+    width: 33.33%;
+    height: 38px;
+    float: left;
+    padding: 0 5px;
+    text-align: center;
+    line-height: 38px;
+}
+
+.searchHots .hot-list a{
+    color: #333;
+}

@@ -33,3 +33,9 @@ h1, h2, h3, h4{
 li{
     list-style: none;
 }
+
+button{
+    appearance: none;
+    background: none;
+    border: none;
+}
