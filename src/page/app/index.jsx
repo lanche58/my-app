@@ -7,6 +7,7 @@ import ChoiceCity from '../choiceCity';
 import SignIn from '../signIn';
 import Search from '../search';
 import * as userInfoAction from '../../action/userinfo';
+// import configureStore from '../../store/store';
 
 class App extends React.Component {
     constructor(props) {
@@ -38,7 +39,9 @@ class App extends React.Component {
         let cityName = "北京";
 
         // 更新userinfo.cityName，通过action更新
-        this.props.userInfoActions({cityName: cityName})
+        this.props.userInfoActions.update({
+            cityName
+        })
 
         this.setState({
             initDone: true
@@ -46,12 +49,17 @@ class App extends React.Component {
     }
 }
 
+function mapStateToProps(state) {
+    return {}
+}
+
 function mapDispatchToProps(dispatch) {
     return {
-        userInfoActions: (data) => dispatch(userInfoAction(data))
+        userInfoActions: bindActionCreators(userInfoAction, dispatch)
     }
 }
 
 export default connect(
+    mapStateToProps,
     mapDispatchToProps
 )(App);

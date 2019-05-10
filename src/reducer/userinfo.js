@@ -1,12 +1,12 @@
 import * as actionTypes from '../data/userinfo';
 
-const userReducer = function(state, action) {
+const userinfo = function(state={}, action) {
     switch(action.type) {
-        case actionTypes.USERINFO_UPDAT:
+        case actionTypes.USERINFO_UPDATE:
             return action.data;
         default:
             return state;
     }
 }
 
-export default userReducer;
+export default userinfo;
