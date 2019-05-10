@@ -12,15 +12,8 @@
 
 .search-input .clear{
     position: absolute;
-    top: 50%;
+    top: 0;
     right: 15px;
-    margin-top: -8px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #bababa;
-    text-align: center;
-    line-height: 16px;
-    font-style: normal;
-    color: #fff;
+    line-height: 30px;
+    color: #bababa;
 }

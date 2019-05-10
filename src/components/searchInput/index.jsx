@@ -7,7 +7,7 @@ class SearchInput extends React.Component {
         return (
             <div className="search-input">
                 <input type="text" className="inp" placeholder={this.props.placeholder}/>
-                <i className="clear">x</i>
+                <i className="clear icon iconfont icon-guanbi1"></i>
             </div>
         )
     }
