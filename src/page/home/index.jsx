@@ -18,8 +18,11 @@ function mapStateToProps(state) {
     }
 }
 
-// function mapDispatchToProps()
+function mapDispatchToProps(dispatch) {
+    return {}
+}
 
 export default connect(
-    mapStateToProps
+    mapStateToProps,
+    mapDispatchToProps
 )(Home);

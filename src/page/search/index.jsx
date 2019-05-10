@@ -1,9 +1,18 @@
 import React from 'react';
+import SearchHeader from '../../components/searchHeader';
+import SearchHots from '../../components/searchHots';
+import SearchRecords from '../../components/searchRecords';
 
-function Search() {
-    return (
-        <h3>请输入关键字～</h3>
-    )
+class Search extends React.Component {
+    render() {
+        return (
+            <div>
+                <SearchHeader/>
+                <SearchHots/>
+                <SearchRecords/>
+            </div>            
+        )
+    }
 }
 
 export default Search;

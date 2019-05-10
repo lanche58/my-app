@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { withRouter } from 'react-router-dom';
 import './style.css';
 
 class CityList extends React.Component {
@@ -15,7 +15,7 @@ class CityList extends React.Component {
                 <ul className="cityList clearfix">
                 {
                     this.props.citys.map((item, index) =>
-                        <li key={index}><p onClick={this.getCity.bind(this)}>{item}</p></li>
+                        <li key={index}><p onClick={this.clickHandle.bind(this)}>{item}</p></li>
                     )
                 }
                 </ul>
@@ -23,9 +23,13 @@ class CityList extends React.Component {
         )
     }
 
-    getCity() {
-        console.log(1)
+    clickHandle(e) {
+        const changeCity = this.props.changeFn;
+        const newCity = e.target.innerText;
+        changeCity(newCity);
+        // 路由跳转
+        this.props.history.push('/');
     }
 }
 
-export default CityList;
+export default withRouter(CityList);

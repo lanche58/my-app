@@ -1,0 +1,19 @@
+.searchHeader{
+    height: 50px;
+    padding: 10px;
+    background: #fff;
+}
+
+.searchHeader .btn-cancel{
+    float: right;
+    margin-left: 15px;
+}
+
+.searchHeader .search-input{
+    overflow: hidden;
+}
+
+.btn-cancel{
+    line-height: 30px;
+    color: #e8203d;
+}

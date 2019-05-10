@@ -7,7 +7,8 @@ import ChoiceCity from '../choiceCity';
 import SignIn from '../signIn';
 import Search from '../search';
 import * as userInfoAction from '../../action/userinfo';
-// import configureStore from '../../store/store';
+import localStore from '../../util/localStorage';
+import * as localStoreKey from '../../config/localStorageKey';
 
 class App extends React.Component {
     constructor(props) {
@@ -34,9 +35,11 @@ class App extends React.Component {
     }
     // 组件渲染后调用
     componentDidMount() {
-
-        // 获取cityName
-        let cityName = "北京";
+        // 从本地存储获取cityName
+        let cityName = localStore.getItem(localStoreKey.CITYNAME);
+        if (!cityName) {
+            cityName = "成都";
+        }
 
         // 更新userinfo.cityName，通过action更新
         this.props.userInfoActions.update({

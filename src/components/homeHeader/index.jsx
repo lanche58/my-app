@@ -17,7 +17,7 @@ class HomeHeader extends React.Component {
                 </Link>
                 <Link to="/search">
                     <div className="h-search">
-                        <input type="text" className="search-inp" placeholder="请输入关键字" />
+                        <input type="text" className="search-inp" disabled placeholder="请输入关键字" />
                         <i className="icon iconfont icon-sousuo"></i>
                     </div>
                 </Link>
