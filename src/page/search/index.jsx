@@ -7,7 +7,8 @@ class Search extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isShowRecord: false
+            isShowRecord: false,
+            recordsList: []
         }
     }
     render() {
@@ -17,23 +18,33 @@ class Search extends React.Component {
                 <SearchHeader changeFn={this.recordsShow.bind(this)} />
                 <SearchHots hots={hots}/>
                 {
-                    this.state.isShowRecord ? <SearchRecords/> : null
+                    this.state.isShowRecord ? <SearchRecords clearClickHandle={this.clearHandle.bind(this)}  records={this.state.recordsList}/> : null
                 }
                 
             </div>            
         )
     }
     recordsShow(value) {
-        if (value && this.state.isShowRecord === false) {
+        if (value) {
+            if (this.state.isShowRecord === false) {
+                this.setState({
+                    isShowRecord: true
+                })
+            }
+
+            var newRecords = this.state.recordsList;
+            newRecords.push(value);
+            
             this.setState({
-                isShowRecord: true
+                recordsList: newRecords
             })
         }
-        if (value) {
-            let _records = document.getElementsByClassName('.records-list');
-            console.log(_records);
-            // _records.append('<li>' + value +'</li>');
-        }
+    }
+    clearHandle() {
+        this.setState({
+            recordsList: [],
+            isShowRecord: false
+        })
     }
 }
 
