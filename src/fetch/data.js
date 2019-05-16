@@ -9,7 +9,7 @@ export function getData() {
         console.log(text);
     });
 
-    let resultJson = get('/api/2');
+    let resultJson = get('/home/carousel');
     resultJson.then(res => {
         return res.json();
     }).then(json => {

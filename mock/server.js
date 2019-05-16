@@ -1,12 +1,17 @@
 const Koa = require('koa');
 const router = require('koa-router')();
 const bodyParser = require('koa-bodyparser');
+const carouselData = require('./home/carousel');
 
 let app = new Koa();
 app.use(bodyParser());
 
 router.get('/api/1', async (ctx, next) => {
     ctx.body = "index";
+});
+
+router.get('/home/carousel', async (ctx, next) => {
+    ctx.body = carouselData;
 });
 
 router.get('/api/2', async (ctx, next) => {
