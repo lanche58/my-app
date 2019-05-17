@@ -8,10 +8,10 @@ import '../src/static/css/reset.css';
 import '../src/static/css/common.css';
 import '../src/static/css/iconfont.css';
 
-import {getData, postData} from './fetch/data';
+// import {getData, postData} from './fetch/data';
 
-getData();
-postData();
+// getData();
+// postData();
 
 const store = configureStore();
 
