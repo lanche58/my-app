@@ -9,6 +9,7 @@ import Search from '../search';
 import * as userInfoAction from '../../action/userinfo';
 import localStore from '../../util/localStorage';
 import * as localStoreKey from '../../config/localStorageKey';
+import SearchResult from '../searchResult';
 
 class App extends React.Component {
     constructor(props) {
@@ -27,6 +28,7 @@ class App extends React.Component {
                         <Route path="/choiceCity" component={ChoiceCity}/>
                         <Route path="/signIn" component={SignIn}/>
                         <Route path="/search" component={Search}/>
+                        <Route path="/searchResult/:category/:keyword?" component={SearchResult}/>
                     </Router>
                     : '正在加载中。。。'
                 }

@@ -34,7 +34,7 @@ class HomeCarousel extends React.Component {
                                 {
                                     item.map((item1, index1) => 
                                         <li key={`b${index1}`}>
-                                            <Link to="/">
+                                            <Link to={"/searchResult/" + encodeURIComponent(item1.title)}>
                                                 <div className="img-wrap"><img src={item1.img} alt=""/></div>
                                                 <p className="title">{item1.title}</p>
                                             </Link>

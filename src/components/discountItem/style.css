@@ -1,0 +1,38 @@
+.discount-item a{
+    color: #333;
+}
+
+.discount-item .pic img{
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.discount-item .title{
+    padding-top: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.discount-item .price .old{
+    color: #999;
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.discount-item .price .current{
+    text-decoration: none;
+    font-size: 20px;
+    color: #e8203d;
+}
+
+.discount-item .price .current span{
+    font-size: 14px;
+}
+
+.discount-item .price{
+    padding-top: 5px;
+    height: 16px;
+    line-height: 16px;
+}
