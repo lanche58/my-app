@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SearchInput from '../searchInput';
-
 import './style.css';
 
 class HomeHeader extends React.Component {
@@ -16,13 +14,12 @@ class HomeHeader extends React.Component {
                 <Link to="/signIn">
                     <div className="h-user"><i className="icon iconfont icon-wulumuqishigongandashujuguanlipingtai-ico-"></i></div>
                 </Link>
- 
-                <div className="h-search">
-                    {/* <input type="text" className="search-inp" placeholder="请输入关键字" /> */}
-                    <SearchInput/>
-
-                    <i className="icon iconfont icon-sousuo"></i>
-                </div>
+                <Link to="/search">
+                    <div className="h-search">
+                        <span className="search-inp">输入商户名、地名</span>
+                        <i className="icon iconfont icon-sousuo"></i>
+                    </div>
+                </Link>
             </div>
         )
     }

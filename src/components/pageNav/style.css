@@ -1,0 +1,30 @@
+.page-nav ul{
+    display: inline-block;
+    vertical-align: bottom;
+    border: 1px solid #e8203d;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 28px;
+}
+
+.page-nav{
+    text-align: center;
+}
+
+.page-nav li{
+    float: left;
+    width: 74px;
+    font-size: 13px;
+}
+
+.page-nav a{
+    color: #e8203d;
+}
+
+.page-nav li.act{
+    background: #e8203d;
+}
+
+.page-nav li.act a{
+    color: #fff;
+}

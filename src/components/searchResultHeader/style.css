@@ -1,0 +1,39 @@
+.search-result-header{
+    background: #f2f2f2;
+    padding-bottom: 10px;
+}
+
+.search-result-header .t{
+    padding: 10px;
+    position: relative;
+}
+
+.search-result-header .t .icon{
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    color: #e8203d;
+    line-height: 1;
+    font-size: 20px;
+}
+
+.search-result-header .t .icon-jiantou-zuo-cuxiantiao{
+    left: 10px;
+}
+
+.search-result-header .t .icon-sousuo{
+    right: 10px;
+}
+
+.search-result-header .h-search .icon-sousuo{
+    line-height: 30px;
+}
+
+.search-result-header .h-search{
+    margin: 0 10px;
+}
+
+.h-search .search-input .inp{
+    padding-left: 30px;
+    background: #fff;
+}

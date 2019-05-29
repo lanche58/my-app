@@ -1,1 +1,2 @@
 export const CITYNAME = 'USER_CURRENT_CITY_NAME';
+export const SEARCHRECORDS = "SEARCH_RECORDS";

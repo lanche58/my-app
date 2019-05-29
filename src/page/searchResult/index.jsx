@@ -1,9 +1,14 @@
 import React from 'react';
+import SearchResultHeader from '../../components/searchResultHeader';
 
 class SearchResult extends React.Component {
+    
     render() {
+        const params = this.props.match.params;
         return (
-            <h1>search result</h1>
+            <div>
+                <SearchResultHeader keyword={params.keyword}/>
+            </div>
         )
     }
 }

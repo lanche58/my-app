@@ -53,11 +53,8 @@
     color: #999;
 }
 
-.h-search .search-input .inp{
-    padding-left: 30px;
-}
-
-/* .search-inp{
+.search-inp{
+    display: block;
     width: 100%;
     height: 30px;
     border: 1px solid #fff;
@@ -65,4 +62,6 @@
     line-height: 24px;
     background: #fff;
     padding: 2px 10px 2px 30px;
-} */
+    color: #b8b8b8;
+    font-size: 13px;
+}

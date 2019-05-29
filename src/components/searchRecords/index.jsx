@@ -1,5 +1,5 @@
 import React from 'react';
-
+// import { Link } from 'react-router-dom';
 import './style.css';
 
 class SearchRecords extends React.Component {
@@ -11,7 +11,7 @@ class SearchRecords extends React.Component {
                     <ul className="records-list">
                     {
                         this.props.records.map((item, index) => 
-                            <li key={index}>{item}</li>
+                            <li key={index} onClick={this.clickHandle.bind(this)}>{item}</li>
                         )
                     }
                     </ul>
@@ -19,6 +19,10 @@ class SearchRecords extends React.Component {
                 </div>
             </div>
         )
+    }
+    clickHandle(e) {
+        const value = e.target.innerText;
+        this.props.clickSearchFn(value);
     }
 }
 
